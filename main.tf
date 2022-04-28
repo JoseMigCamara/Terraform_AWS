@@ -1,3 +1,4 @@
+# aws_eip.eip0 (Elastic IP):
 resource "aws_eip" "eip0" {
   network_border_group = "us-east-1"
   tags                 = {}
