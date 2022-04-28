@@ -90,6 +90,20 @@ resource "aws_security_group" "sg0" {
       cidr_blocks      = [
         "78.29.147.32/32",
       ]
+      description      = ""
+      from_port        = 22
+      ipv6_cidr_blocks = []
+      prefix_list_ids  = []
+      protocol         = "tcp"
+      security_groups  = []
+      self             = false
+      to_port          = 22
+    },
+
+    {
+      cidr_blocks      = [
+        "78.29.147.32/32",
+      ]
       description      = "Permitir todo o HTTPS vindo do meu IP"
       from_port        = 443
       ipv6_cidr_blocks = []
