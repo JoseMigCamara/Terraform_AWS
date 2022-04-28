@@ -9,7 +9,7 @@ resource "aws_eip" "eip0" {
 
 # aws_instance.instance:
 resource "aws_instance" "instance" {
-    ami                                  = "ami-0f9fc25dd2506cf6d"
+    ami                                  = "ami-04505e74c0741db8d" #centOS > ami-0f9fc25dd2506cf6d debian > ami-04505e74c0741db8d
     availability_zone                    = "us-east-1a"
     instance_type                        = "t2.micro"
     key_name                             = "GRSI"
